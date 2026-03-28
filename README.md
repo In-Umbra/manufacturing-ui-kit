@@ -1,15 +1,16 @@
 <div align="center">
-  
-  # ⚙️ Manufacturing UI Kit
-  ### Precision Engineering for Modern Industrial Dashboards
-  
-  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-  [![React](https://img.shields.io/badge/React-18.0+-61dafb.svg)](https://reactjs.org/)
-  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0+-38bdf8.svg)](https://tailwindcss.com/)
-  [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178c6.svg)](https://www.typescriptlang.org/)
 
-  **「現場」を、美しく。** Manufacturing UI Kit は、製造業の複雑なデータを直感的なインテリジェンスに変える、  
-  **In-Umbra Project** による React 専用コンポーネントライブラリです。
+# ⚙️ Manufacturing UI Kit
+### Precision Engineering for Modern Industrial Dashboards
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![React](https://img.shields.io/badge/React-18.0+-61dafb.svg)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0+-38bdf8.svg)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178c6.svg)](https://www.typescriptlang.org/)
+
+**「現場」を、美しく。** Manufacturing UI Kit は、製造業の複雑なデータを直感的なインテリジェンスに変える、  
+**In-Umbra Project** による React 専用コンポーネントライブラリです。
+
 </div>
 
 ---
@@ -39,7 +40,12 @@
 npm install @in-umbra/manufacturing-ui-kit
 # or
 yarn add @in-umbra/manufacturing-ui-kit
-3. Basic UsageTypeScriptimport { KpiCard, MachineStatusCard, QuickCheck } from '@in-umbra/manufacturing-ui-kit';
+```
+
+### 3. Basic Usage
+
+```bash
+import { KpiCard, MachineStatusCard, QuickCheck } from '@in-umbra/manufacturing-ui-kit';
 
 const Dashboard = () => {
   return (
@@ -68,4 +74,24 @@ const Dashboard = () => {
     </div>
   );
 };
-🎨 Component GalleryCategoryComponentsMonitoringKpiCard, UniversalCard, MiniSparklineAnalyticsBarChart, DonutChart, ProductionProgressBarInteractionDeviceSwitch, QuickCheck, TextField, SelectBoxData LayersDataTable, SpecsTable, MetricsList, DayServiceBarFeedbackAlertBar, StatusBadge, NoticeBoard, EventLog📄 LicenseMIT LicenseCopyright (c) 2026 In-UmbraPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.<div align="center"><p>Created with Precision by <strong>In-Umbra</strong></p><p>© 2026 In-Umbra. All Rights Reserved.</p></div>
+```
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](./LICENSE) file for details.
+
+## 🎨 Component Gallery
+
+| Category | Components |
+| :--- | :--- |
+| **Monitoring** | KpiCard, UniversalCard, MiniSparkline |
+| **Analytics** | BarChart, DonutChart, ProductionProgressBar |
+| **Interaction** | DeviceSwitch, QuickCheck, TextField, SelectBox |
+| **Data Layers** | DataTable, SpecsTable, MetricsList, DayServiceBar |
+| **Feedback** | AlertBar, StatusBadge, NoticeBoard, EventLog |
+
+<div align="center">
+<p>Created with Precision by <strong>In-Umbra</strong></p>
+<p>© 2026 In-Umbra. All Rights Reserved.</p>
+</div>
