@@ -1,6 +1,6 @@
 {
   "name": "@in-umbra/manufacturing-ui-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Precision Engineering UI components for React",
   "type": "module",
   "main": "./dist/index.js",
