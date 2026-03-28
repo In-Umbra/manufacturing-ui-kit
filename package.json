@@ -1,6 +1,6 @@
 {
   "name": "@in-umbra/manufacturing-ui-kit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "description": "Precision Engineering UI components for React",
   "type": "module",
