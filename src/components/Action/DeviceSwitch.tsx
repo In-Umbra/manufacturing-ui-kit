@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface DeviceSwitchProps {
+export interface DeviceSwitchProps {
     label: string;
     isEnabled: boolean;
     onChange: (val: boolean) => void;

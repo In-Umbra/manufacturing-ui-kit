@@ -1,9 +1,9 @@
 import React from 'react';
 
-interface MiniSparklineProps {
+export interface MiniSparklineProps {
     data: number[];
     color?: 'blue' | 'green' | 'red' | 'amber' | 'slate';
-    height?: number; // 単位はpx
+    height?: number;
 }
 
 export const MiniSparkline: React.FC<MiniSparklineProps> = ({
@@ -19,16 +19,18 @@ export const MiniSparkline: React.FC<MiniSparklineProps> = ({
         slate: 'bg-slate-100 group-hover:bg-slate-200',
     };
 
+    const gapClass = data.length > 40 ? 'gap-0' : data.length > 20 ? 'gap-[1px]' : 'gap-1';
+
     return (
         <div
             style={{ height: `${height}px` }}
-            className="flex items-end gap-1 px-1 group w-full"
+            className={`flex items-end ${gapClass} px-0.5 group w-full`}
         >
             {data.map((val, i) => (
                 <div
                     key={i}
-                    className={`flex-1 ${colorMap[color]} rounded-t-sm transition-all duration-700 ease-out`}
-                    style={{ height: `${Math.min(Math.max(val, 5), 100)}%` }} // 最低5%見せることで視認性を確保
+                    className={`flex-1 ${colorMap[color]} rounded-t-[1px] transition-all duration-700 ease-out`}
+                    style={{ height: `${Math.min(Math.max(val, 5), 100)}%` }}
                 />
             ))}
         </div>

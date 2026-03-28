@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface StatusBadgeProps {
+export interface StatusBadgeProps {
     level: 'info' | 'warning' | 'critical';
     text: string;
 }

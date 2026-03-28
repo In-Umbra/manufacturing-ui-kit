@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface UniversalCardProps {
+export interface UniversalCardProps {
     title: string;
     value?: string | number;
     unit?: string;

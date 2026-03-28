@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface Event {
+export interface Event {
     time: string;
     message: string;
     type: 'system' | 'user' | 'alert';

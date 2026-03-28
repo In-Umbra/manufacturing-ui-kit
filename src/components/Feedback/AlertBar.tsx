@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface AlertBarProps {
+export interface AlertBarProps {
     message: string;
     type: 'error' | 'warning' | 'info';
     onClose?: () => void;

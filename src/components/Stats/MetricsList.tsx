@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface Metric {
+export interface Metric {
     label: string;
     value: string | number;
     isAlert?: boolean;

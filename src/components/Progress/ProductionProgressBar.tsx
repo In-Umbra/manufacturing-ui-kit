@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface ProductionProgressBarProps {
+export interface ProductionProgressBarProps {
     label: string;
     target: number;
     actual: number;

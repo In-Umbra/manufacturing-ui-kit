@@ -2,7 +2,7 @@ import React from 'react';
 
 type MachineStatus = 'running' | 'stopped' | 'idle' | 'error';
 
-interface StatusConfig {
+export interface StatusConfig {
     label: string;
     color: string;
     bg: string;
@@ -10,7 +10,7 @@ interface StatusConfig {
     animate?: string;
 }
 
-interface MachineStatusCardProps {
+export interface MachineStatusCardProps {
     machineName: string;
     id: string;
     status: MachineStatus;

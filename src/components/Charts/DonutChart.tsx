@@ -1,12 +1,12 @@
 import React from 'react';
 
-interface ChartSegment {
+export interface ChartSegment {
     label: string;
     value: number;
     color: string;
 }
 
-interface DonutChartProps {
+export interface DonutChartProps {
     title: string;
     data: ChartSegment[];
     centerLabel?: string;
@@ -40,16 +40,14 @@ export const DonutChart: React.FC<DonutChartProps> = ({ title, data, centerLabel
                             strokeWidth={thickness}
                         />
 
-                        {/* 各セグメント */}
                         {data.map((segment, i) => {
                             if (total === 0) return null;
                             const percentage = segment.value / total;
                             const strokeDasharray = `${circumference * percentage} ${circumference}`;
-
                             const rotation = currentAngle;
                             currentAngle += percentage * 360;
 
-                            const strokeClass = segment.color.replace('fill-', 'stroke-');
+                            const isTailwind = segment.color.includes('-');
 
                             return (
                                 <circle
@@ -58,7 +56,8 @@ export const DonutChart: React.FC<DonutChartProps> = ({ title, data, centerLabel
                                     cy={size / 2}
                                     r={radius}
                                     fill="none"
-                                    className={`${strokeClass} transition-all duration-700 ease-out`}
+                                    className={`${isTailwind ? segment.color.replace('fill-', 'stroke-') : ''} transition-all duration-700 ease-out`}
+                                    style={!isTailwind ? { stroke: segment.color } : {}}
                                     strokeWidth={thickness}
                                     strokeDasharray={strokeDasharray}
                                     strokeDashoffset={0}
@@ -86,17 +85,21 @@ export const DonutChart: React.FC<DonutChartProps> = ({ title, data, centerLabel
                 <div className="flex flex-row sm:flex-col flex-wrap gap-x-4 gap-y-2 justify-center sm:justify-start">
                     {data.map((segment, i) => {
                         const percentage = total > 0 ? (segment.value / total * 100).toFixed(1) : 0;
-
-                        const dotColor = segment.color.replace('stroke-', 'bg-').replace('fill-', 'bg-');
-                        const textColor = segment.color.replace('stroke-', 'text-').replace('fill-', 'text-');
+                        const isTailwind = segment.color.includes('-');
 
                         return (
                             <div key={i} className="flex items-center gap-2">
-                                <span className={`w-2 h-2 rounded-full ${dotColor}`} />
+                                <span
+                                    className={`w-2 h-2 rounded-full ${isTailwind ? segment.color.replace('stroke-', 'bg-').replace('fill-', 'bg-') : ''}`}
+                                    style={!isTailwind ? { backgroundColor: segment.color } : {}}
+                                />
                                 <span className="text-[10px] font-bold text-slate-600">
                                     {segment.label}
                                 </span>
-                                <span className={`text-[10px] font-black ${textColor}`}>
+                                <span
+                                    className={`text-[10px] font-black ${isTailwind ? segment.color.replace('stroke-', 'text-').replace('fill-', 'text-') : ''}`}
+                                    style={!isTailwind ? { color: segment.color } : {}}
+                                >
                                     {percentage}%
                                 </span>
                             </div>

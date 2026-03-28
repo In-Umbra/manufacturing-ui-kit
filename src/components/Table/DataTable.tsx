@@ -1,12 +1,12 @@
 import React from 'react';
 
-interface Column {
+export interface Column {
     key: string;
     label: string;
     width?: string;
 }
 
-interface DataTableProps {
+export interface DataTableProps {
     columns: Column[];
     data: any[];
     onRowClick?: (row: any) => void;

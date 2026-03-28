@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface KpiCardProps {
+export interface KpiCardProps {
     label: string;
     value: string | number;
     unit?: string;

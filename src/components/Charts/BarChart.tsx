@@ -1,11 +1,11 @@
 import React from 'react';
 
-interface ChartData {
+export interface ChartData {
     label: string;
     value: number;
 }
 
-interface BarChartProps {
+export interface BarChartProps {
     title: string;
     data: ChartData[];
     height?: number;

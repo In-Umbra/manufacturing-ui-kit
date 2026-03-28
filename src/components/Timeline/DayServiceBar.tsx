@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface TimeSlot {
+export interface TimeSlot {
     status: 'running' | 'stopped' | 'idle';
     width: number; // パーセンテージ
 }

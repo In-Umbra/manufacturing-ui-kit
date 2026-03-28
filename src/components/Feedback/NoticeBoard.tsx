@@ -1,6 +1,11 @@
 import React from 'react';
 
-export const NoticeBoard: React.FC<{ message: string; date: string }> = ({ message, date }) => (
+export interface NoticeBoardProps {
+    message: string;
+    date: string;
+}
+
+export const NoticeBoard: React.FC<NoticeBoardProps> = ({ message, date }) => (
     <div className="bg-yellow-50 border-2 border-yellow-200 p-4 rounded-lg relative overflow-hidden">
         <div className="absolute top-0 right-0 bg-yellow-200 px-2 py-0.5 text-[9px] font-bold text-yellow-700 rounded-bl">
             NOTICE

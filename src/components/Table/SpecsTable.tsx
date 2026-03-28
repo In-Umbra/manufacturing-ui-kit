@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface SpecRow {
+export interface SpecRow {
     label: string;
     value: string;
 }

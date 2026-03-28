@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-interface QuickCheckProps {
+export interface QuickCheckProps {
     label: string;
     onCheck?: (checked: boolean) => void;
     defaultChecked?: boolean;
@@ -27,7 +27,7 @@ export const QuickCheck: React.FC<QuickCheckProps> = ({
                 : 'bg-white border-slate-200 text-slate-500 hover:border-slate-300 hover:bg-slate-50'
                 }`}
         >
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 pr-5">
                 {label}
             </span>
 

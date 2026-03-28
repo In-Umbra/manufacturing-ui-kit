@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface OperatorCardProps {
+export interface OperatorCardProps {
     name: string;
     role: string;
     avatarUrl?: string;

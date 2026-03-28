@@ -102,12 +102,14 @@ function App() {
                 height={260}
               />
             </div>
+            {/* fill-blue-200 fill-red-500 fill-amber-400 */}
             <DonutChart title="Quality Breakdown" data={[
-              { label: 'Good', value: 180, color: 'fill-blue-600' },
-              { label: 'Waste', value: 200, color: 'fill-red-500' },
-              { label: 'Rework', value: 415, color: 'fill-amber-400' }
+              { label: 'Good', value: 180, color: '#6366f1' },
+              { label: 'Waste', value: 200, color: '#f43f5e' },
+              { label: 'Rework', value: 415, color: '#10b981' }
             ]}
               centerValue="795"
+              centerLabel='Total'
             />
             <div className="lg:col-span-3">
               <ProductionProgressBar label="Current Job: #A-770 (Batch Processing)" target={2500} actual={1840} defects={15} />
