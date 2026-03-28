@@ -76,11 +76,6 @@ const Dashboard = () => {
 };
 ```
 
-## 📄 License
-
-This project is licensed under the **MIT License**.  
-See the [LICENSE](./LICENSE) file for details.
-
 ## 🎨 Component Gallery
 
 | Category | Components |
@@ -90,6 +85,11 @@ See the [LICENSE](./LICENSE) file for details.
 | **Interaction** | DeviceSwitch, QuickCheck, TextField, SelectBox |
 | **Data Layers** | DataTable, SpecsTable, MetricsList, DayServiceBar |
 | **Feedback** | AlertBar, StatusBadge, NoticeBoard, EventLog |
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](./LICENSE) file for details.
 
 <div align="center">
 <p>Created with Precision by <strong>In-Umbra</strong></p>
