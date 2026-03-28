@@ -15,6 +15,19 @@
 
 </div>
 
+## 🚀 Live Demo (Storybook)
+
+プロジェクトの全コンポーネントをブラウザで確認できます：
+[**Storybookを開く**](https://in-umbra.github.io/manufacturing-ui-kit/)
+
+---
+
+## 📸 Component Preview
+
+<a href="https://in-umbra.github.io/manufacturing-ui-kit/" target="_blank">
+  <img src="docs/images/storybook-preview.png" alt="Storybook Preview" width="100%" style="border-radius: 8px; border: 1px solid #ddd; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+</a>
+
 ---
 
 ## 🏗 Key Features

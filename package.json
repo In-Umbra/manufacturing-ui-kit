@@ -17,7 +17,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "peerDependencies": {
     "react": ">=18",
@@ -33,6 +34,7 @@
     "@storybook/addon-interactions": "^8.6.18",
     "@storybook/react": "^8.6.18",
     "@storybook/react-vite": "^8.6.18",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@tailwindcss/postcss": "^4.2.1",
     "@types/node": "^24.12.0",
     "@types/react": "^19.2.14",
