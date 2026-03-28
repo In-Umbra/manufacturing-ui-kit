@@ -1,0 +1,35 @@
+name: Deploy Storybook to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # mainブランチにpushされたら起動
+
+permissions:
+  contents: write # gh-pagesブランチへの書き込み権限
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/checkout@v4
+        with:
+          node-version: '22'
+          cashe: 'npm'
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps # Vite 8の競合対策
+
+      - name: Build Storybook
+        run: npm run build-storybook # package.jsonにこのスクリプトがあるか確認
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: storybook-static # Storybookのビルド済みファイルが入るフォルダ
+          branch: gh-pages # デプロイ先のブランチ
