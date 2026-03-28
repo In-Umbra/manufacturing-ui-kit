@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  /* 製造業向けカスタムカラーの定義 */
+  --color-factory-running: #10b981;
+  --color-factory-stopped: #ef4444;
+  --color-factory-idle: #f59e0b;
+  --color-factory-alert: #ea580c;
+  --color-factory-primary: #2563eb;
+}
