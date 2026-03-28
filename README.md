@@ -1,4 +1,6 @@
-<div align="center">
+[![npm version](https://img.shields.io/npm/v/@in-umbra/manufacturing-ui-kit.svg)](https://www.npmjs.com/package/@in-umbra/manufacturing-ui-kit)
+
+<div align="">
 
 # ⚙️ Manufacturing UI Kit
 ### Precision Engineering for Modern Industrial Dashboards
